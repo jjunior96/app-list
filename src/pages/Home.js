@@ -46,6 +46,13 @@ export default function Home() {
             <TotalPrice>R$ 60,03</TotalPrice>
           </TotalInfo>
         </Total>
+
+        <Cart>
+          <CartInfo>
+            
+          </CartInfo>
+
+        </Cart>
       </Menu>
 
     </Container>
@@ -97,13 +104,9 @@ const InfoItem = styled.Text`
   flex-direction: column;
 `;
 
-const Menu = styled.View`
-  /* padding: 40px; */
-  height: 64px;
+const Menu = styled.SafeAreaView`
+  height: 80px;
   background-color: #203449;
-
-  /* justify-content: center;
-  align-items: center; */
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -111,13 +114,13 @@ const Menu = styled.View`
 
 const Total = styled.View`
   color: #20C970;
-  margin: 24px;
+  /* margin: 24px; */
   flex-direction: row;
 `;
 
 const TotalInfo = styled.View`
   margin-bottom: 14px;
-  padding: 4px;
+  padding-left: 8px;
 `;
 
 const TotalImage = styled.Image`
@@ -136,4 +139,13 @@ const TotalPrice = styled.Text`
   font-size: 18px;
   margin-bottom: 14px;
   font-weight: bold;
+`;
+
+const Cart = styled.View`
+ 
+`;
+
+const CartInfo = styled.View`
+  margin-bottom: 14px;
+  padding: 4px;
 `;
